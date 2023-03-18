@@ -3,7 +3,7 @@ aka k_mrd_mrsad_c aka ck3_mrd_mrsad_compatch
 
 This mod is a compatibiliy patch / compatch between  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2863881219" target="_blank">**More Religious Doctrines - Updated by Polytheism Reborn**</a> / <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2863881058" target="_blank">**More Immersive Doctrines - Updated by Polytheism Reborn**</a>   and  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2866697794" target="_blank">**More Tenet Slots and Doctrines**</a> /  <a href="https://steamcommunity.com/workshop/filedetails/?id=2871344570" target="_blank">**MTSAD Stand Alone**</a>
 
-This is not compatible (at least for now) with the Combined Mod because the included Diety Doctrines mod is not compatible with the More Doctrines mods (some doctrines have the same name variable names). 
+This is not compatible (at least for now) with the Combined Mod because the included Diety Doctrines mod is not compatible with the More Doctrines mods (some doctrines have the same variable names). 
 
 The Load Order is
 More Religious Doctrines - Updated by Polytheism Reborn / More Immersive Doctrines - Updated by Polytheism Reborn
