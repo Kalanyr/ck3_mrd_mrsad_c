@@ -1,0 +1,6 @@
+﻿l_russian:
+ DOCTRINE_NOT_BOTH_MARRIAGE_AND_CONCUBINAGE:0 "[faith|E] не позволяет иметь несколько супругов и наложнить"
+ INCOMPATIBLE_DOCTRINE_DUALISTIC_DITHEISTIC_TRIGGER:0 "[faith|E] должна иметь либо Дуалистических Богов, либо Транстеистических Богов"
+ INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E] должна верить в нескольких Богов"
+ doctrine_parameter_clergy_must_be_devoted:0 "Члены [clergy|E] должны быть монахами или монахинями."
+ doctrine_parameter_clergy_must_be_devoted_disabled:0 "Члены [clergy|E] не должны быть монахами или монахинями."

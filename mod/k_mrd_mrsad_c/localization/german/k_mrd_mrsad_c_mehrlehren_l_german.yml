@@ -1,0 +1,6 @@
+﻿l_german:
+ DOCTRINE_NOT_BOTH_MARRIAGE_AND_CONCUBINAGE:0 "[faith|E] kann nicht mehrere Ehepartner und Konkubinen haben"
+ INCOMPATIBLE_DOCTRINE_DUALISTIC_DITHEISTIC_TRIGGER:0 "[faith|E] muss entweder Ditheistische Götter oder Transtheistische Götter haben"
+ INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E] muss an mehrere Götter glauben"
+ doctrine_parameter_clergy_must_be_devoted:0 "Mitglieder des [clergy|E] muss Mönche oder Nonnen sein."
+ doctrine_parameter_clergy_must_be_devoted_disabled:0 "Mitglieder des [clergy|E] sollten keine Mönche oder Nonnen sein."

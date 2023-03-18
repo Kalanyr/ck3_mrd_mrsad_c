@@ -1,0 +1,692 @@
+﻿
+#####################################################################
+# EFFECT LIST
+#####################################################################
+
+remove_religious_tradition_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_religious_text
+		}
+		remove_doctrine = doctrine_religious_text
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_oral_tradition
+		}
+		remove_doctrine =  doctrine_oral_tradition
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_sacred_scriptures
+		}
+		remove_doctrine = doctrine_sacred_scriptures
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_autonomous_tradition
+		}
+		remove_doctrine = doctrine_autonomous_tradition
+	}
+}
+
+remove_gods_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_monotheistic
+		}
+		remove_doctrine = doctrine_monotheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_henotheistic
+		}
+		remove_doctrine = doctrine_henotheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_ditheistic
+		}
+		remove_doctrine = doctrine_ditheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_dihenotheistic
+		}
+		remove_doctrine = doctrine_dihenotheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_tritheistic
+		}
+		remove_doctrine = doctrine_tritheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_trihenotheistic
+		}
+		remove_doctrine = doctrine_trihenotheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_polytheistic
+		}
+		remove_doctrine = doctrine_polytheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_kathenotheistic
+		}
+		remove_doctrine = doctrine_kathenotheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_syncretic_mythology
+		}
+		remove_doctrine = doctrine_syncretic_mythology
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_transtheistic
+		}
+		remove_doctrine = doctrine_transtheistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_agnostic
+		}
+		remove_doctrine = doctrine_agnostic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_atheistic
+		}
+		remove_doctrine = doctrine_atheistic
+	}
+}
+
+remove_nature_of_godhood_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_ethereal
+		}
+		remove_doctrine = doctrine_ethereal
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_ethereal_immortal
+		}
+		remove_doctrine =  doctrine_ethereal_immortal
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_immortal
+		}
+		remove_doctrine = doctrine_immortal
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_aeonic
+		}
+		remove_doctrine = doctrine_aeonic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_spiritual
+		}
+		remove_doctrine = doctrine_spiritual
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_personal
+		}
+		remove_doctrine = doctrine_personal
+	}
+}
+
+remove_cosmology_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_theistic_creation
+		}
+		remove_doctrine = doctrine_theistic_creation
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_eternal
+		}
+		remove_doctrine = doctrine_eternal
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_cyclic
+		}
+		remove_doctrine = doctrine_cyclic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_dualistic
+		}
+		remove_doctrine = doctrine_dualistic
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_chaos_into_world
+		}
+		remove_doctrine = doctrine_chaos_into_world
+	}
+}
+
+remove_deities_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_demigods
+		}
+		remove_doctrine = doctrine_demigods
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_archangels
+		}
+		remove_doctrine = doctrine_archangels
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_aspects
+		}
+		remove_doctrine = doctrine_aspects
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_spirits
+		}
+		remove_doctrine = doctrine_spirits
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_deities_none
+		}
+		remove_doctrine = doctrine_deities_none
+	}
+}
+
+remove_divine_guidance_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_prophets
+		}
+		remove_doctrine = doctrine_prophets
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_anointed_deliverer
+		}
+		remove_doctrine =  doctrine_anointed_deliverer
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_gurus
+		}
+		remove_doctrine = doctrine_gurus
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_avatars
+		}
+		remove_doctrine = doctrine_avatars
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_enlightened_monks
+		}
+		remove_doctrine = doctrine_enlightened_monks
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_divine_guidance_none
+		}
+		remove_doctrine = doctrine_divine_guidance_none
+	}
+}
+
+remove_eschatology_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_apocalypse
+		}
+		remove_doctrine = doctrine_apocalypse
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_judgement_day
+		}
+		remove_doctrine =  doctrine_judgement_day
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_promised_deliverer
+		}
+		remove_doctrine = doctrine_promised_deliverer
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_eschatology_none
+		}
+		remove_doctrine = doctrine_eschatology_none
+	}
+}
+
+remove_thanatology_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_paradise
+		}
+		remove_doctrine = doctrine_paradise
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_underworld
+		}
+		remove_doctrine = doctrine_underworld
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_paradise_and_underworld
+		}
+		remove_doctrine = doctrine_paradise_and_underworld
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_reincarnation
+		}
+		remove_doctrine = doctrine_reincarnation
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_eternal_feast
+		}
+		remove_doctrine = doctrine_eternal_feast
+	}
+}
+
+remove_holy_mortals_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_venerated_ancestors
+		}
+		remove_doctrine = doctrine_venerated_ancestors
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_saints
+		}
+		remove_doctrine =  doctrine_saints
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_heroes
+		}
+		remove_doctrine = doctrine_heroes
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_gurus_2
+		}
+		remove_doctrine = doctrine_gurus_2
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_avatars_2
+		}
+		remove_doctrine = doctrine_avatars_2
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_holy_mortals_none
+		}
+		remove_doctrine = doctrine_holy_mortals_none
+	}
+}
+
+remove_prayer_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_paramount
+		}
+		remove_doctrine = doctrine_paramount
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_obligatory
+		}
+		remove_doctrine =  doctrine_obligatory
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_recommended
+		}
+		remove_doctrine = doctrine_recommended
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_autonomous
+		}
+		remove_doctrine = doctrine_autonomous
+	}
+}
+
+remove_atonement_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_mandatory_atone
+		}
+		remove_doctrine = doctrine_mandatory_atone
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_encouraged_atone
+		}
+		remove_doctrine = doctrine_encouraged_atone
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_atonement_none
+		}
+		remove_doctrine = doctrine_atonement_none
+	}
+}
+
+remove_almsgiving_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_mandatory_alms
+		}
+		remove_doctrine = doctrine_mandatory_alms
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_encouraged_alms
+		}
+		remove_doctrine = doctrine_encouraged_alms
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_almsgiving_none
+		}
+		remove_doctrine = doctrine_almsgiving_none
+	}
+}
+
+remove_marriage_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_monogamy
+		}
+		remove_doctrine = doctrine_monogamy
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_bigamy
+		}
+		remove_doctrine = doctrine_bigamy
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_trigamy
+		}
+		remove_doctrine = doctrine_trigamy
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_polygamy
+		}
+		remove_doctrine  = doctrine_polygamy
+	}
+}
+
+remove_concubinage_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_no_concubinage
+		}
+		remove_doctrine = doctrine_no_concubinage
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_paramourial
+		}
+		remove_doctrine = doctrine_paramourial
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_two_concubines
+		}
+		remove_doctrine = doctrine_two_concubines
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_concubines
+		}
+		remove_doctrine = doctrine_concubines
+	}
+}
+
+remove_divorce_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_divorce_disallowed
+		}
+		remove_doctrine = doctrine_divorce_disallowed
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_divorce_approval
+		}
+		remove_doctrine = doctrine_divorce_approval
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_divorce_allowed
+		}
+		remove_doctrine = doctrine_divorce_allowed
+	}
+}
+
+remove_bastardry_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_bastardry_all
+		}
+		remove_doctrine = doctrine_bastardry_all
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_bastardry_legitimization
+		}
+		remove_doctrine = doctrine_bastardry_legitimization
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_bastardry_none
+		}
+		remove_doctrine = doctrine_bastardry_none
+	}
+}
+
+remove_stance_on_marriage_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_sacred_marriage
+		}
+		remove_doctrine = doctrine_sacred_marriage
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_worldly_marriage
+		}
+		remove_doctrine = doctrine_worldly_marriage
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_none_marriage
+		}
+		remove_doctrine = doctrine_none_marriage
+	}
+}
+
+remove_consanguinity_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_consanguinity_restricted
+		}
+		remove_doctrine = doctrine_consanguinity_restricted
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_consanguinity_cousins
+		}
+		remove_doctrine =  doctrine_consanguinity_cousins
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+		}
+		remove_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_consanguinity_unrestricted
+		}
+		remove_doctrine = doctrine_consanguinity_unrestricted
+	}
+}
+
+remove_clerical_wealth_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_encouraged
+		}
+		remove_doctrine = doctrine_encouraged
+	}
+	if = {
+		limit = {
+			has_doctrine =  doctrine_no_restrictions
+		}
+		remove_doctrine =  doctrine_no_restrictions
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_curtailed
+		}
+		remove_doctrine = doctrine_curtailed
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_apostolic_poverty
+		}
+		remove_doctrine = doctrine_apostolic_poverty
+	}
+}
+
+remove_clerical_monkhood_doctrines = {
+	if = {
+		limit = {
+			has_doctrine = doctrine_monk_not_clergy_enforced
+		}
+		remove_doctrine = doctrine_monk_not_clergy_enforced
+	}
+	if = {
+		limit = {
+			has_doctrine = doctrine_monk_clergy_enforced
+		}
+		remove_doctrine = doctrine_monk_clergy_enforced
+	}
+}
+
+add_doctrine_monotheistic = {
+	remove_gods_doctrines = yes
+	add_doctrine = doctrine_monotheistic
+}
+
+add_doctrine_ditheistic = {
+	remove_gods_doctrines = yes
+	add_doctrine = doctrine_ditheistic
+}
+
+add_doctrine_personal = {
+	remove_nature_of_godhood_doctrines = yes
+	add_doctrine = doctrine_personal
+}
+
+add_doctrine_monogamy = {
+	remove_marriage_doctrines = yes
+	add_doctrine = doctrine_monogamy
+}
+
+add_doctrine_polygamy = {
+	remove_marriage_doctrines = yes
+	add_doctrine = doctrine_polygamy
+}
+
+add_doctrine_concubines = {
+	remove_concubinage_doctrines = yes
+	add_doctrine = doctrine_concubines
+}
+
+add_doctrine_divorce_allowed = {
+	remove_divorce_doctrines = yes
+	add_doctrine = doctrine_divorce_allowed
+}
+
+add_doctrine_divorce_approval = {
+	remove_divorce_doctrines = yes
+	add_doctrine = doctrine_divorce_approval
+}
+
+add_doctrine_divorce_disallowed = {
+	remove_divorce_doctrines = yes
+	add_doctrine = doctrine_divorce_disallowed
+}
+
+add_doctrine_bastardry_none = {
+	remove_bastardry_doctrines = yes
+	add_doctrine = doctrine_bastardry_none
+}
+
+add_doctrine_consanguinity_unrestricted = {
+	remove_consanguinity_doctrines = yes
+	add_doctrine = doctrine_consanguinity_unrestricted
+}
+
+add_doctrine_apostolic_poverty = {
+	remove_clerical_wealth_doctrines = yes
+	add_doctrine = doctrine_apostolic_poverty
+}
+
+add_doctrine_monk_clergy_enforced = {
+	remove_clerical_monkhood_doctrines = yes
+	add_doctrine = doctrine_monk_clergy_enforced
+}
+
+clear_modded_doctrines = {
+	remove_religious_tradition_doctrines = yes
+	remove_gods_doctrines = yes
+	remove_nature_of_godhood_doctrines = yes
+	remove_cosmology_doctrines = yes
+	remove_deities_doctrines = yes
+	remove_divine_guidance_doctrines = yes
+	remove_eschatology_doctrines = yes
+	remove_thanatology_doctrines = yes
+	remove_holy_mortals_doctrines = yes
+	remove_prayer_doctrines = yes
+	remove_atonement_doctrines = yes
+	remove_almsgiving_doctrines = yes
+	remove_marriage_doctrines = yes
+	remove_concubinage_doctrines = yes
+	remove_divorce_doctrines = yes
+	remove_bastardry_doctrines = yes
+	remove_stance_on_marriage_doctrines = yes
+	remove_consanguinity_doctrines = yes
+	remove_clerical_wealth_doctrines = yes
+	remove_clerical_monkhood_doctrines = yes
+}

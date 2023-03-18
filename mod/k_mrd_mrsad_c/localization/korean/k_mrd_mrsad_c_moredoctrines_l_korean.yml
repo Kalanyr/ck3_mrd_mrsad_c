@@ -1,0 +1,6 @@
+﻿l_korean:
+ DOCTRINE_NOT_BOTH_MARRIAGE_AND_CONCUBINAGE:0 "[faith|E]은(는) 여러 배우자와 첩 모두 가질 수 없습니다."
+ INCOMPATIBLE_DOCTRINE_DUALISTIC_DITHEISTIC_TRIGGER:0 "[faith|E]은(는) 반드시 이신론 또는 초신론적 신앙을 가져야 합니다."
+ INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E]은(는) 여러 신을 믿어야 합니다."
+ doctrine_parameter_clergy_must_be_devoted:0 "[clergy|E]의 구성원은 수도사 또는 수녀여야 합니다."
+ doctrine_parameter_clergy_must_be_devoted_disabled:0 "[clergy|E]의 구성원은 수도사나 수녀가 아니어야 합니다."

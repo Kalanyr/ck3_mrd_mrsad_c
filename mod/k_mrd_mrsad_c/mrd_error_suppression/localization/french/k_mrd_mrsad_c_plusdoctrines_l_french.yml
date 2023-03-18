@@ -1,0 +1,6 @@
+﻿l_french:
+ DOCTRINE_NOT_BOTH_MARRIAGE_AND_CONCUBINAGE:0 "[faith|E] ne peut pas avoir à la fois plusieurs conjoints et concubines"
+ INCOMPATIBLE_DOCTRINE_DUALISTIC_DITHEISTIC_TRIGGER:0 "[faith|E] doit avoir des Dieux Dithéistes ou des Dieux Transthéistes"
+ INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E] doit croire en plusieurs Dieux"
+ doctrine_parameter_clergy_must_be_devoted:0 "Members of the [clergy|E] must be monks or nuns."
+ doctrine_parameter_clergy_must_be_devoted_disabled:0 "Les membres du [clergy|E] doivent être des moines ou des nonnes."

@@ -1,0 +1,15 @@
+﻿doctrine_not_both_marriage_and_concubinage = {
+	first_not = DOCTRINE_NOT_BOTH_MARRIAGE_AND_CONCUBINAGE
+	third_not = DOCTRINE_NOT_BOTH_MARRIAGE_AND_CONCUBINAGE
+}
+
+incompatible_doctrine_dualistic_ditheistic_trigger = {
+	first_not = INCOMPATIBLE_DOCTRINE_DUALISTIC_DITHEISTIC_TRIGGER
+	third_not = INCOMPATIBLE_DOCTRINE_DUALISTIC_DITHEISTIC_TRIGGER
+}
+
+incompatible_doctrine_chaos_into_world_polytheistic_trigger = {
+	first_not = INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER
+	third_not = INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER
+
+}

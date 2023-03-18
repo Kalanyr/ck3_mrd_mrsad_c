@@ -1,0 +1,141 @@
+﻿doctrine_clerical_monkhood = {
+	group = "clergy"
+	doctrine_monk_clergy_enforced = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		parameters = {
+			clergy_must_be_devoted = yes
+		}
+	}
+	doctrine_monk_not_clergy_enforced = {
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		parameters = {
+			clergy_must_be_devoted = no
+		}
+	}
+}
+
+doctrine_gods = {
+	group = "belief"
+	doctrine_monotheistic = {	#Only One
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			monthly_piety_gain_mult = 0.1
+		}
+	}
+	doctrine_henotheistic = {	#One, may be more
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			monthly_piety_gain_mult = 0.05
+			different_faith_opinion = 5
+		}
+	}
+	doctrine_ditheistic = {	#Only Two
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			learning_per_prestige_level = 2
+		}
+	}
+	doctrine_dihenotheistic = {	#Two, may be more
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			learning_per_prestige_level = 1
+			different_faith_opinion = 5
+		}
+	}
+	doctrine_tritheistic = {	#Only Three
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			direct_vassal_opinion = 5
+		}
+	}
+	doctrine_trihenotheistic = {	#Three, may be more
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			religious_vassal_opinion = 5
+			different_faith_opinion = 5
+		}
+	}
+	doctrine_polytheistic = {	#Many
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			county_opinion_add = 10
+		}
+	}
+	doctrine_kathenotheistic = {	#Many, but one is worshipped at a time
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			county_opinion_add = 5
+			learning = 1
+		}
+	}
+	doctrine_syncretic_mythology = {	#Many, but we do not exclude other religions Gods
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		parameters = {
+			hostility_override_doctrine_clerical_marriage_allowed = 1
+			hostility_override_doctrine_clerical_marriage_disallowed = 1
+		}
+		character_modifier = {
+			different_faith_county_opinion_mult = -1.0
+			different_faith_opinion = 5
+		}
+	}
+	doctrine_transtheistic = {	#No Gods, but still a religion
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			learning_per_piety_level = 1
+			learning = 1
+		}
+		traits = {
+			virtues = { scholar }
+		}
+	}
+	doctrine_agnostic = {	#No Gods, but there may be one
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			learning = 1
+		}
+		traits = {
+			virtues = { theologian = 2 }
+		}
+	}
+	doctrine_atheistic = {	#No Gods
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+		}
+		character_modifier = {
+			stress_gain_mult = 0.1
+		}
+		traits = {
+			sins = { theologian }
+			virtues = { scholar }
+		}
+	}
+}
+
+
