@@ -16,4 +16,4 @@ Uploads for Steam Workshop can be found at:
 https://steamcommunity.com/sharedfiles/filedetails/?id=2948174424
 
 Uploads for Paradox Plaza can be found at:
-(tba)
+https://mods.paradoxplaza.com/mods/59265/Any
