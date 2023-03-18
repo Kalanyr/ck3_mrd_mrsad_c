@@ -6,6 +6,6 @@ tags={
 	"Religion"
 	"Warfare"
 }
-name="More (Religious or Immersive) Doctrines - Updated By Polytheism Reborn + More Tenets And Doctrines (Stand Alone) Compatch"
+name="More Doctrines (updated) + MTAD (SA) Compatch"
 supported_version="1.8.1"
 path="mod/k_mrd_mrsad_c"
