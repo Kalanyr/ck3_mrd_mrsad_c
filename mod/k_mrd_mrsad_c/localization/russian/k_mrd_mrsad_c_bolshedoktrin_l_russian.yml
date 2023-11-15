@@ -4,3 +4,4 @@
  INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E] должна верить в нескольких Богов"
  doctrine_parameter_clergy_must_be_devoted:0 "Члены [clergy|E] должны быть монахами или монахинями."
  doctrine_parameter_clergy_must_be_devoted_disabled:0 "Члены [clergy|E] не должны быть монахами или монахинями."
+ doctrine_parameter_number_of_consorts_zero_loc:0 "Правители, несмотря на [gender_law|E], не могут брать [concubines|E]"

@@ -271,46 +271,25 @@ window = {
 					text = "FAITH_CORE_TENETS_HEADING"
 				}
 
-				scrollbox = {
-					layoutpolicy_vertical = expanding
-					layoutpolicy_horizontal = expanding
-					size = { 200 250 }
-					
-					#margin_top = 5
-					#spacing = 10
-					
-					blockoverride "scrollbox_content"
-					{
-						
-						fixedgridbox = {
-							name = "doctrines_grid_core_tenets"
-							datamodel = "[FaithWindow.GetGroupingHelper( 'core_tenets' ).GetGrouping]"
-							flipdirection = yes
-							addcolumn = 140
-							addrow = 210
-							setitemsizefromcell = yes
-							datamodel_wrap = 4
-							maxhorizontalslots = -1
-							maxverticalslots = -1
-							layoutpolicy_vertical = expanding
-							layoutpolicy_horizontal = expanding
+				hbox = {
+					name = "doctrines_grid_core_tenets"
+					datamodel = "[FaithWindow.GetGroupingHelper( 'core_tenets' ).GetGrouping]"
+					spacing = 52
 
-							state = {
-								name = "faith_view_refresh"
-								using = Animation_Refresh_FadeOut
-							}
+					state = {
+						name = "faith_view_refresh"
+						using = Animation_Refresh_FadeOut
+					}
 
-							state = {
-								using = Animation_Refresh_FadeIn
-							}
+					state = {
+						using = Animation_Refresh_FadeIn
+					}
 
-							item = {
-								container_tenet_item = {
-									datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-									datacontext = "[GuiFaithDoctrineItem.GetFaith]"
-									tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP"
-								}
-							}
+					item = {
+						container_tenet_item = {
+							datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
+							datacontext = "[GuiFaithDoctrineItem.GetFaith]"
+							tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP"
 						}
 					}
 				}
@@ -359,6 +338,7 @@ window = {
 
 								hbox = {
 									spacing = 5
+
 									expand = {}
 
 									icon = {
@@ -371,28 +351,32 @@ window = {
 									}
 								}
 
-								vbox = {
-									dynamicgridbox = {
-										name = "sins_grid"
-										datamodel = "[FaithWindow.GetSins]"
-										flipdirection = yes
-										datamodel_wrap = 6
+								widget = {
+									size = { 250 40 }
 
-										item = {
-											icon = {
-												datacontext = "[GuiVirtueOrSinItem.GetTrait]"
-												size = { 40 40 }
-												alwaystransparent = yes
-												texture = "[Trait.GetIcon( GetPlayer )]"
+									vbox = {
+										dynamicgridbox = {
+											name = "virtues_grid"
+											datamodel = "[FaithWindow.GetSins]"
+											flipdirection = yes
+											datamodel_wrap = 6
 
-												tooltipwidget = {
-													using = faith_window_trait_tooltip
-												}
+											item = {
+												icon = {
+													datacontext = "[GuiVirtueOrSinItem.GetTrait]"
+													size = { 40 40 }
+													alwaystransparent = yes
+													texture = "[Trait.GetIcon( GetPlayer )]"
 
-												block "tooltip_placement"
-												{
-													using = tooltip_ne
-													tooltip_offset = { 0 20 }
+													tooltipwidget = {
+														using = faith_window_trait_tooltip
+													}
+
+													block "tooltip_placement"
+													{
+														using = tooltip_ne
+														tooltip_offset = { 0 20 }
+													}
 												}
 											}
 										}
@@ -426,28 +410,31 @@ window = {
 									}
 								}
 
-								vbox = {
-									dynamicgridbox = {
-										name = "virtues_grid"
-										datamodel = "[FaithWindow.GetVirtues]"
-										flipdirection = yes
-										datamodel_wrap = 6
+								widget = {
+									size = { 250 40 }
+									vbox = {
+										dynamicgridbox = {
+											name = "virtues_grid"
+											datamodel = "[FaithWindow.GetVirtues]"
+											flipdirection = yes
+											datamodel_wrap = 6
 
-										item = {
-											icon = {
-												datacontext = "[GuiVirtueOrSinItem.GetTrait]"
-												size = { 40 40 }
-												alwaystransparent = yes
-												texture = "[Trait.GetIcon( GetPlayer )]"
+											item = {
+												icon = {
+													datacontext = "[GuiVirtueOrSinItem.GetTrait]"
+													size = { 40 40 }
+													alwaystransparent = yes
+													texture = "[Trait.GetIcon( GetPlayer )]"
 
-												tooltipwidget = {
-													using = faith_window_trait_tooltip
-												}
+													tooltipwidget = {
+														using = faith_window_trait_tooltip
+													}
 
-												block "tooltip_placement"
-												{
-													using = tooltip_ne
-													tooltip_offset = { 0 20 }
+													block "tooltip_placement"
+													{
+														using = tooltip_ne
+														tooltip_offset = { 0 20 }
+													}
 												}
 											}
 										}
@@ -524,54 +511,6 @@ window = {
 
 							text_label_center = {
 								layoutpolicy_horizontal = expanding
-								text = "FAITH_DOCTRINES_BELIEF"
-								default_format = "#low"
-							}
-
-							fixedgridbox = {
-								datamodel = "[FaithWindow.GetGroupingHelper( 'belief' ).GetGrouping]"
-								flipdirection = yes
-								addcolumn = 225
-								addrow = 67
-								datamodel_wrap = 2
-
-								item = {
-									widget_doctrine_item = {}
-								}
-							}
-						}
-						
-						vbox = {
-							layoutpolicy_horizontal = expanding
-							spacing = 12
-							margin_bottom = -10
-
-							text_label_center = {
-								layoutpolicy_horizontal = expanding
-								text = "FAITH_DOCTRINES_PRACTICES"
-								default_format = "#low"
-							}
-
-							fixedgridbox = {
-								datamodel = "[FaithWindow.GetGroupingHelper( 'practices' ).GetGrouping]"
-								flipdirection = yes
-								addcolumn = 225
-								addrow = 67
-								datamodel_wrap = 2
-
-								item = {
-									widget_doctrine_item = {}
-								}
-							}
-						}						
-
-						vbox = {
-							layoutpolicy_horizontal = expanding
-							spacing = 12
-							margin_bottom = -10
-
-							text_label_center = {
-								layoutpolicy_horizontal = expanding
 								text = "FAITH_DOCTRINES_MARRIAGE"
 								default_format = "#low"
 							}
@@ -633,68 +572,6 @@ window = {
 
 								item = {
 									widget_doctrine_item = {}
-								}
-							}
-						}
-
-						vbox = {
-							visible = "[DataModelHasItems( FaithWindow.GetGroupingHelper( 'mrsad_sins' ).GetGrouping )]"
-							layoutpolicy_horizontal = expanding
-							spacing = 12
-							margin_bottom = -10
-
-
-							text_label_center = {
-								layoutpolicy_horizontal = expanding
-								text = "FAITH_WINDOW_SINS"
-								default_format = "#low"
-							}
-
-							fixedgridbox = {
-								name = "doctrines_grid_sins"
-								datamodel = "[FaithWindow.GetGroupingHelper( 'mrsad_sins' ).GetGrouping]"
-
-								flipdirection = yes
-								addcolumn = 270
-								addrow = 67
-
-								datamodel_wrap = 2
-								maxhorizontalslots = -1
-								maxverticalslots = 10
-
-								item = {
-									widget_doctrine_item_small = {}
-								}
-							}
-						}
-
-						vbox = {
-							visible = "[DataModelHasItems( FaithWindow.GetGroupingHelper( 'mrsad_virtues' ).GetGrouping )]"
-							layoutpolicy_horizontal = expanding
-							spacing = 12
-							margin_bottom = -10
-
-
-							text_label_center = {
-								layoutpolicy_horizontal = expanding
-								text = "FAITH_WINDOW_VIRTUES"
-								default_format = "#low"
-							}
-
-							fixedgridbox = {
-								name = "doctrines_grid_virtues"
-								datamodel = "[FaithWindow.GetGroupingHelper( 'mrsad_virtues' ).GetGrouping]"
-
-								flipdirection = yes
-								addcolumn = 270
-								addrow = 67
-
-								datamodel_wrap = 2
-								maxhorizontalslots = -1
-								maxverticalslots = 10
-
-								item = {
-									widget_doctrine_item_small = {}
 								}
 							}
 						}
@@ -938,7 +815,7 @@ window = {
 			}
 
 			hbox = {
-				spacing = 10
+				#spacing = 10
 				margin_bottom = 8
 				margin_top = 8
 				layoutpolicy_horizontal = expanding
@@ -1604,50 +1481,6 @@ types FaithWindow
 					{
 						text = "[FaithDoctrine.GetNameNoTooltip( Faith.Self )]"
 					}
-				}
-			}
-		}
-	}
-	type widget_doctrine_item_small = margin_widget {
-		size = { 260 53 }
-		#margin = {5 5}
-		block "wdi_context"
-		{
-			datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-			datacontext = "[GuiFaithDoctrineItem.GetFaith]"
-		}
-
-		block "background" {
-			background = {
-				using = Background_Area
-				margin = { 5 5 }
-			}
-		}
-
-		flowcontainer = {
-			name = "faith_list_item"
-			datacontext = "[GuiFaithDoctrineItem.GetDoctrine]"
-			spacing = 8
-			using = tooltip_nw
-			tooltip = "FAITH_WINDOW_DOCTRINE_TOOLTIP_WITH_FAITH"
-
-			flowcontainer = {
-				direction = vertical
-
-				text_single = {
-					name = "doctrine_group_name"
-					text = "[FaithDoctrine.GetGroup.GetName( Faith.Self )]"
-					align = left
-					default_format = "#low"
-				}
-
-				text_single = {
-					name = "faith_name"
-					text = "[FaithDoctrine.GetNameNoTooltip( Faith.Self )]"
-					#datacontext = "[GuiFaithDoctrineItem.GetFaith]"
-					layoutpolicy_horizontal = expanding
-					elide = right
-					align = left
 				}
 			}
 		}

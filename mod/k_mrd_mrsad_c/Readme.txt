@@ -1,0 +1,3 @@
+There is an md_doctrines.txt in mrd_error_suppression\common\religion\doctrines , which will suppress some further load time errors from More Religious Doctrines but isn't compatible with More Immersive Doctrines - Updated by Polytheism Reborn as suppressing those errors requires overwriting the md_doctrine file (which brings in the character modifier effects again ).  ( The costs here should be fairly minor because the errors are load time errors and parsing fails very early though so I've erred on the side of compatibility )
+
+If you're using More Religious Doctrines and want to suppress those errors copy that file to common\religion\doctrines in the mod folder. 

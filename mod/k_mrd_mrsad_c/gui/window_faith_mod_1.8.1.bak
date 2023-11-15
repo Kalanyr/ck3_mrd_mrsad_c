@@ -82,7 +82,7 @@ window = {
 
 			blockoverride "illustration_texture"
 			{
-				texture = "[Illustration.GetTexture( FaithWindow.GetFaith.MakeScope )]"
+				texture = "[Illustration.GetTextureForFaith( FaithWindow.GetFaith )]"
 				spriteType = stretched
 				fittype = centercrop
 				alpha = 0.35
@@ -371,28 +371,42 @@ window = {
 									}
 								}
 
-								vbox = {
-									dynamicgridbox = {
-										name = "sins_grid"
-										datamodel = "[FaithWindow.GetSins]"
-										flipdirection = yes
-										datamodel_wrap = 6
+								widget = {
+									size = { 250 40 }
+									scrollbox = {
+										layoutpolicy_vertical = expanding
 
-										item = {
-											icon = {
-												datacontext = "[GuiVirtueOrSinItem.GetTrait]"
-												size = { 40 40 }
-												alwaystransparent = yes
-												texture = "[Trait.GetIcon( GetPlayer )]"
+										size = { 250 50 }
+										#margin = { 0 0 }
+										#margin_top = 5
+										#spacing = 10
 
-												tooltipwidget = {
-													using = faith_window_trait_tooltip
-												}
+										blockoverride "scrollbox_content"
+										{
+											margin = { 0 0 }
+											dynamicgridbox = {
+												name = "virtues_grid"
+												datamodel = "[FaithWindow.GetSins]"
+												flipdirection = yes
+												datamodel_wrap = 6
 
-												block "tooltip_placement"
-												{
-													using = tooltip_ne
-													tooltip_offset = { 0 20 }
+												item = {
+													icon = {
+														datacontext = "[GuiVirtueOrSinItem.GetTrait]"
+														size = { 40 40 }
+														alwaystransparent = yes
+														texture = "[Trait.GetIcon( GetPlayer )]"
+
+														tooltipwidget = {
+															using = faith_window_trait_tooltip
+														}
+
+														block "tooltip_placement"
+														{
+															using = tooltip_ne
+															tooltip_offset = { 0 20 }
+														}
+													}
 												}
 											}
 										}
@@ -426,28 +440,42 @@ window = {
 									}
 								}
 
-								vbox = {
-									dynamicgridbox = {
-										name = "virtues_grid"
-										datamodel = "[FaithWindow.GetVirtues]"
-										flipdirection = yes
-										datamodel_wrap = 6
+								widget = {
+									size = { 250 40 }
+									scrollbox = {
+										layoutpolicy_vertical = expanding
 
-										item = {
-											icon = {
-												datacontext = "[GuiVirtueOrSinItem.GetTrait]"
-												size = { 40 40 }
-												alwaystransparent = yes
-												texture = "[Trait.GetIcon( GetPlayer )]"
+										size = { 250 50 }
+										#margin = { 0 0 }
+										#margin_top = 5
+										#spacing = 10
 
-												tooltipwidget = {
-													using = faith_window_trait_tooltip
-												}
+										blockoverride "scrollbox_content"
+										{
+											margin = { 0 0 }
+											dynamicgridbox = {
+												name = "virtues_grid"
+												datamodel = "[FaithWindow.GetVirtues]"
+												flipdirection = yes
+												datamodel_wrap = 6
 
-												block "tooltip_placement"
-												{
-													using = tooltip_ne
-													tooltip_offset = { 0 20 }
+												item = {
+													icon = {
+														datacontext = "[GuiVirtueOrSinItem.GetTrait]"
+														size = { 40 40 }
+														alwaystransparent = yes
+														texture = "[Trait.GetIcon( GetPlayer )]"
+
+														tooltipwidget = {
+															using = faith_window_trait_tooltip
+														}
+
+														block "tooltip_placement"
+														{
+															using = tooltip_ne
+															tooltip_offset = { 0 20 }
+														}
+													}
 												}
 											}
 										}
@@ -722,7 +750,7 @@ window = {
 									text_single = {
 										layoutpolicy_horizontal = expanding
 
-
+										
 										margin = { 17 0 }
 										margin_top = 12
 										margin_bottom = 13
@@ -741,7 +769,7 @@ window = {
 											using = Background_Area
 										}
 
-
+										
 									}
 
 								}
@@ -938,7 +966,7 @@ window = {
 			}
 
 			hbox = {
-				spacing = 10
+				#spacing = 10
 				margin_bottom = 8
 				margin_top = 8
 				layoutpolicy_horizontal = expanding
@@ -950,7 +978,7 @@ window = {
 					minimumsize = { 240 0 }
 					visible = "[NotEqualTo_uint32( Faith.GetID, GetPlayer.GetFaith.GetID )]"
 					text = "FAITH_CONVERSION_CONVERT"
-					onclick = "[ToggleGameViewData( 'faith_conversion', Faith.GetID )]"
+					onclick = "[OpenFaithConversionWindow( Faith.GetID )]"
 
 					using = tooltip_nw
 				}
@@ -960,7 +988,7 @@ window = {
 					minimumsize = { 240 0 }
 					visible = "[And( ObjectsEqual(Faith.Self, GetPlayer.GetFaith ), GetVariableSystem.HasValue( 'faith_view_tabs', 'beliefs' ))]"
 					text = "CREATE_REFORM_FAITH_TEXT"
-					onclick = "[OpenGameViewData( 'faith_creation', Faith.GetID )]"
+					onclick = "[OpenFaithCreationWindow( Faith.GetID )]"
 					tooltip = "CREATE_REFORM_FAITH_TOOLTIP"
 
 					using = tooltip_nw
@@ -1016,7 +1044,7 @@ window = {
 			background = {
 				alpha = 0.5
 				fittype = end
-				texture = "[Illustration.GetTexture( FaithWindow.GetFaith.MakeScope )]"
+				texture = "[Illustration.GetTextureForFaith( FaithWindow.GetFaith )]"
 
 				modify_texture = {
 					mirror = vertical
@@ -1353,7 +1381,7 @@ window = {
 
 							state = {
 								name = _mouse_click
-								on_finish = "[OpenGameViewData( 'faith', Faith.GetID )]"
+								on_finish = "[DefaultOnFaithClick(Faith.GetID)]"
 							}
 
 							background = {
@@ -1362,7 +1390,7 @@ window = {
 							}
 
 							divider_light = {
-								alpha = "[Select_float(GreaterThan_int32(Faith.GetNumberOfCountiesOfFaith,'(int32)0'), '(float)1.0','(float)0.5')]"
+								alpha = "[Select_float(GreaterThan_int32(Faith.GetNumberOfCountiesOfFaith,'(int32)0'), '(float)1.0','(float)0.5'))]"
 								size = { 100% 3 }
 								parentanchor = bottom
 								position = { 0 1 }
@@ -1370,7 +1398,7 @@ window = {
 
 							hbox = {
 								margin = { 10 5 }
-								alpha = "[Select_float(GreaterThan_int32(Faith.GetNumberOfCountiesOfFaith,'(int32)0'), '(float)1.0','(float)0.5')]"
+								alpha = "[Select_float(GreaterThan_int32(Faith.GetNumberOfCountiesOfFaith,'(int32)0'), '(float)1.0','(float)0.5'))]"
 
 								icon = {
 									name = "faith_icon"

@@ -4,3 +4,4 @@
  INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E]은(는) 여러 신을 믿어야 합니다."
  doctrine_parameter_clergy_must_be_devoted:0 "[clergy|E]의 구성원은 수도사 또는 수녀여야 합니다."
  doctrine_parameter_clergy_must_be_devoted_disabled:0 "[clergy|E]의 구성원은 수도사나 수녀가 아니어야 합니다."
+ doctrine_parameter_number_of_consorts_zero_loc:0 "[gender_law|E]에 관계없이, 통치자는 [concubines|E]을 가질 수 없습니다."

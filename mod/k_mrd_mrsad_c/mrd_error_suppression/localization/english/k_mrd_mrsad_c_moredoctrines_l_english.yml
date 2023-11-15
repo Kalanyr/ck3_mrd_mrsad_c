@@ -4,3 +4,4 @@
  INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E] must believe in multiple Gods"
  doctrine_parameter_clergy_must_be_devoted:0 "Members of the [clergy|E] must be monks or nuns."
  doctrine_parameter_clergy_must_be_devoted_disabled:0 "Members of the [clergy|E] may be monks or nuns."
+ doctrine_parameter_number_of_consorts_zero_loc:0 "Rulers, regardless of [gender_law|E], are not allowed to take any [concubines|E]"

@@ -7,5 +7,5 @@ tags={
 	"Warfare"
 }
 name="More Doctrines (updated) + MTAD (SA) Compatch"
-supported_version="1.8.1"
+supported_version="1.11.*"
 path="mod/k_mrd_mrsad_c"
