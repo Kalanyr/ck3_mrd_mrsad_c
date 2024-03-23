@@ -4,3 +4,4 @@
  INCOMPATIBLE_DOCTRINE_CHAOS_INTO_WORLD_POLYTHEISTIC_TRIGGER:0 "[faith|E] doit croire en plusieurs Dieux"
  doctrine_parameter_clergy_must_be_devoted:0 "Members of the [clergy|E] must be monks or nuns."
  doctrine_parameter_clergy_must_be_devoted_disabled:0 "Les membres du [clergy|E] doivent être des moines ou des nonnes."
+ doctrine_parameter_number_of_consorts_zero_loc:0 "Les dirigeants, quelles que soient les [gender_law|E], ne sont pas autorisés à prendre des [concubines|E]"
